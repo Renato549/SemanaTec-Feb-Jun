@@ -1,15 +1,17 @@
 import random
-from tkinter import *
 from turtle import update, clear, ontimer, setup, \
     hideturtle, tracer, listen, onkey, done
 from random import randrange
 from freegames import square, vector
+from tkinter import Button, Label, Tk, Frame
+
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
-z = random.choice(['Green','Black', 'Blue', 'Brown', 'Purple'])
-d = random.choice(['Green','Black', 'Blue', 'Brown', 'Purple'])
+# Declaramos variables que escojan de forma aleatoria un color
+q = random.choice(['Green', 'Black', 'Blue', 'Brown', 'Purple'])
+d = random.choice(['Green', 'Black', 'Blue', 'Brown', 'Purple'])
 
 
 def change(x, y):
@@ -45,29 +47,21 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, d)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, q)
     update()
     ontimer(move, 100)
 
 
-def Menu():
-    root = Tk()
-    root.geometry("450x100+200+50")
-    mi_Frame = Frame().pack()
-    labe1 = Label(mi_Frame,text='''|||||Bienvenido|||||
-Le gustaria Jugar? \n1) Si\t2)no\n  ''', fg="blue4").pack()
-    ent = Entry(mi_Frame).pack()
-    z = ent.get()
-    root.mainloop()
-    return z
+''' Insertamos nuestras variables
+para que el color sea aleatorio cada
+vez que inicia'''
+
+# Iniciamos Una funcion para iniciar nuestro juego
 
 
-z = Menu()
-if z == 2:
-    exit()
-elif z == 1:
+def S():
     setup(420, 420, 370, 0)
     hideturtle()
     tracer(False)
@@ -79,3 +73,18 @@ elif z == 1:
     move()
     done()
 
+
+def Menu():  # Declaramos una funcion para un menu de inicio
+    root = Tk()
+    root.geometry("450x100+200+50")
+    mi_Frame = Frame().pack()
+    labe1 = Label(mi_Frame, text='''|||||Bienvenido|||||
+Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="blue4").pack()
+    boton = Button(mi_Frame, text='Ingresar', command = S).pack()
+    root.mainloop()
+
+    '''Declaramos un boton ligado a la funcion
+    de arriba para activar el juego'''
+
+
+z = Menu()
