@@ -1,4 +1,5 @@
 import random
+from tkinter import *
 from turtle import update, clear, ontimer, setup, \
     hideturtle, tracer, listen, onkey, done
 from random import randrange
@@ -44,9 +45,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, z)
+        square(body.x, body.y, 9, 'black')
 
-    square(food.x, food.y, 9, d)
+    square(food.x, food.y, 9, 'green')
     update()
     ontimer(move, 100)
 
@@ -57,13 +58,22 @@ Le gustaria Jugar? \n1) Si\t2)no\n  '''))
     return z
 
 
-setup(420, 420, 370, 0)
-hideturtle()
-tracer(False)
-listen()
-onkey(lambda: change(10, 0), 'Right')
-onkey(lambda: change(-10, 0), 'Left')
-onkey(lambda: change(0, 10), 'Up')
-onkey(lambda: change(0, -10), 'Down')
-move()
-done()
+root = Tk()
+root.geometry("450x100+200+50")
+Label(None,text='''|||||Bienvenido|||||
+Le gustaria Jugar? \n1) Si\t2)no\n  ''', fg="blue4").pack()
+z = Menu()
+if z == 2:
+    exit()
+elif z == 1:
+    setup(420, 420, 370, 0)
+    hideturtle()
+    tracer(False)
+    listen()
+    onkey(lambda: change(10, 0), 'Right')
+    onkey(lambda: change(-10, 0), 'Left')
+    onkey(lambda: change(0, 10), 'Up')
+    onkey(lambda: change(0, -10), 'Down')
+    move()
+    done()
+
