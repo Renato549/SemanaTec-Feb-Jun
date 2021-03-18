@@ -52,20 +52,15 @@ def move():
     ontimer(move, 100)
 
 
-def Menu():
-    z = float(input('''|||||Bienvenido|||||
-Le gustaria Jugar? \n1) Si\t2)no\n  '''))
-    return z
-
-
 root = Tk()
 root.geometry("450x100+200+50")
-Label(None,text='''|||||Bienvenido|||||
+mi_Frame = Frame().pack()
+labe1 = Label(mi_Frame,text='''|||||Bienvenido|||||
 Le gustaria Jugar? \n1) Si\t2)no\n  ''', fg="blue4").pack()
-z = Menu()
-if z == 2:
+ent = Entry(mi_Frame).pack()
+if ent == 2:
     exit()
-elif z == 1:
+elif ent == 1:
     setup(420, 420, 370, 0)
     hideturtle()
     tracer(False)
