@@ -52,15 +52,22 @@ def move():
     ontimer(move, 100)
 
 
-root = Tk()
-root.geometry("450x100+200+50")
-mi_Frame = Frame().pack()
-labe1 = Label(mi_Frame,text='''|||||Bienvenido|||||
+def Menu():
+    root = Tk()
+    root.geometry("450x100+200+50")
+    mi_Frame = Frame().pack()
+    labe1 = Label(mi_Frame,text='''|||||Bienvenido|||||
 Le gustaria Jugar? \n1) Si\t2)no\n  ''', fg="blue4").pack()
-ent = Entry(mi_Frame).pack()
-if ent == 2:
+    ent = Entry(mi_Frame).pack()
+    z = ent.get()
+    root.mainloop()
+    return z
+
+
+z = Menu()
+if z == 2:
     exit()
-elif ent == 1:
+elif z == 1:
     setup(420, 420, 370, 0)
     hideturtle()
     tracer(False)
