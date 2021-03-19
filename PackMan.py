@@ -124,10 +124,10 @@ def move():
             point.move(course)
         else:
             options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),  # Hacemos a los fantasmas 
+                vector(10, 0),
+                vector(-10, 0),
+                vector(0, 10),
+                vector(0, -10),  # Hacemos a los fantasmas 
             ]
             plan = choice(options)
             course.x = plan.x
