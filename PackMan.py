@@ -176,7 +176,7 @@ def Menu():  # Declaramos una funcion para un menu de inicio
     root.configure(bg='Blue')
     Label(root, text='''|||||Bienvenido|||||
 Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="red").pack()
-    Button(root, text='Ingresar', command = P).pack()
+    Button(root, text='Ingresar', command=P).pack()
     root.mainloop()
 
     '''Declaramos un boton ligado a la funcion

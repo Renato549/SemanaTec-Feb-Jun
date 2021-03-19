@@ -7,7 +7,6 @@ from freegames import square, vector
 from tkinter import Button, Label, Tk, Frame
 
 
-
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
@@ -17,7 +16,6 @@ d = random.choice(['Green', 'Black', 'Blue', 'Brown', 'Purple'])
 food.x = randrange(-15, 15) * 10
 food.y = randrange(-15, 15) * 10
 n = 0
-
 
 
 def change(x, y):
@@ -35,12 +33,12 @@ def inside(food):
     "Return True if food inside boundaries."
     return -200 < food.x < 190 and -200 < food.y < 190
 
+
 def move():
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
     food.move(n + randrange(-5, 5))  # Hacemos que la comida se mueva
-    
 
     if not inside(head) or head in snake:
         square(head.x, head.y, 9, 'red')
@@ -72,6 +70,7 @@ def move():
     update()
     ontimer(move, 100)
 
+
 def S():
 
     setup(420, 420, 370, 0)
@@ -89,11 +88,11 @@ def S():
 def Menu():  # Declaramos una funcion para un menu de inicio
     root = Tk()
     root.geometry("450x100+200+50")
-    root.configure(bg = 'green')
+    root.configure(bg='green')
     mi_Frame = Frame().pack()
     Label(mi_Frame, text='''|||||Bienvenido|||||
 Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="Brown").pack()
-    Button(mi_Frame, text='Ingresar', command = S).pack()
+    Button(mi_Frame, text='Ingresar', command=S).pack()
     root.mainloop()
 
     '''Declaramos un boton ligado a la funcion
@@ -101,4 +100,3 @@ Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="Brown").pack()
 
 
 Menu()
-

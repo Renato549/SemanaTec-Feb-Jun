@@ -2,7 +2,7 @@ from random import randrange
 from turtle import setup, ontimer, hideturtle, up, \
     tracer, onscreenclick, done, update, clear, goto, dot
 from freegames import vector
-from tkinter import Button, Label, Tk, Frame
+from tkinter import Button, Label, Tk
 
 ball = vector(-200, -200)
 speed = vector(0, 0)
@@ -85,7 +85,7 @@ def Menu():  # Declaramos una funcion para un menu de inicio
     root.configure(bg='Brown')
     Label(root, text='''|||||Bienvenido|||||
 Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="blue4").pack()
-    Button(root, text='Ingresar', command = T).pack()
+    Button(root, text='Ingresar', command=T).pack()
     root.mainloop()
 
     '''Declaramos un boton ligado a la funcion
