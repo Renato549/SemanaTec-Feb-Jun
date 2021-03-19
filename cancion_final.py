@@ -339,8 +339,328 @@ la21 = note.Note('A4')
 st.append(la21)
 la21.duration.quarterLength = 1
 
+chord6 = chord.Chord(['E3','B4'])
+st.append(chord6)
+chord6.duration.quarterLength = 1/2
 
+re14 = note.Note('D5b')
+st.append(re14)
+re14.duration.quarterLength = 1/2
 
+re15 = note.Note('D5b')
+st.append(re15)
+re15.duration.quarterLength = 1/2
 
+re16 = note.Note('D5b')
+st.append(re16)
+re16.duration.quarterLength = 1/2
 
-st.write('midi', fp = 'cancion37.mid')
+re17 = note.Note('D5b')
+st.append(re17)
+re17.duration.quarterLength = 1
+
+si17 = note.Note('B4')
+st.append(si17)
+si17.duration.quarterLength = 1/2
+
+chord7 = chord.Chord(['F#','B4'])
+st.append(chord7)
+chord7.duration.quarterLength = 1/2
+
+la22 = note.Note('A4')
+st.append(la22)
+la22.duration.quarterLength = 1/2
+
+si18 = note.Note('B4')
+st.append(si18)
+si18.duration.quarterLength = 1/2
+
+la23 = note.Note('A4')
+st.append(la23)
+la23.duration.quarterLength = 1/2
+
+si19 = note.Note('B4')
+st.append(si19)
+si19.duration.quarterLength = 1/2
+
+la24 = note.Note('A4')
+st.append(la24)
+la24.duration.quarterLength = 1/2
+
+si20 = note.Note('B4')
+st.append(si20)
+si20.duration.quarterLength = 1/2
+
+re18 = note.Note('D5b')
+st.append(re18)
+re18.duration.quarterLength = 1/2
+
+chord8 = chord.Chord(['D3','F4#'])
+st.append(chord8)
+chord8.duration.quarterLength = 2
+
+rest5 = note.Rest()
+st.append(rest5)
+rest5.duration.quarterLength = 1/2
+
+la25 = note.Note('A4')
+st.append(la25)
+la25.duration.quarterLength = 1/2
+
+si21 = note.Note('B4')
+st.append(si21)
+si21.duration.quarterLength = 1/2
+
+la26 = note.Note('A4')
+st.append(la26)
+la26.duration.quarterLength = 1/2
+
+si22 = note.Note('B4')
+st.append(si22)
+si22.duration.quarterLength = 2
+
+re19 = note.Note('D5b')
+st.append(re19)
+re19.duration.quarterLength = 8
+
+la27 = note.Note('A3')
+st.append(la27)
+la27.duration.quarterLength = 1/2
+
+la28 = note.Note('A4')
+st.append(la28)
+la28.duration.quarterLength = 1/2
+
+la29 = note.Note('A4')
+st.append(la29)
+la26.duration.quarterLength = 1/2
+
+la30 = note.Note('A4')
+st.append(la30)
+la30.duration.quarterLength = 1
+
+la31 = note.Note('A3')
+st.append(la31)
+la31.duration.quarterLength = 1/2
+
+la32 = note.Note('A4')
+st.append(la32)
+la32.duration.quarterLength = 1/2
+
+la33 = note.Note('A4b')
+st.append(la33)
+la33.duration.quarterLength = 1/2
+
+la34 = note.Note('A4b')
+st.append(la34)
+la34.duration.quarterLength = 1/2
+
+mi12 = note.Note('E3')
+st.append(mi12)
+mi12.duration.quarterLength = 1/2
+
+fa4 = note.Note('F4#')
+st.append(fa4)
+fa4.duration.quarterLength = 1
+
+rest6 = note.Rest()
+st.append(rest6)
+rest6.duration.quarterLength = 1/2
+
+chord9 = chord.Chord(['E3','A4b'])
+st.append(chord9)
+chord9.duration.quarterLength = 1/2
+
+la35 = note.Note('A4b')
+st.append(la35)
+la35.duration.quarterLength = 1/2
+
+la36 = note.Note('A4')
+st.append(la36)
+la36.duration.quarterLength = 1/2
+
+fa5 = note.Note('F3#')
+st.append(fa5)
+fa5.duration.quarterLength = 1/2
+
+fa6 = note.Note('F4#')
+st.append(fa6)
+fa6.duration.quarterLength = 1 
+
+fa7 = note.Note('F3#')
+st.append(fa7)
+fa7.duration.quarterLength = 1
+
+re20 = note.Note('D3')
+st.append(re20)
+re20.duration.quarterLength = 1
+
+chord10 = chord.Chord(['D3','F4#'])
+st.append(chord10)
+chord10.duration.quarterLength = 1
+
+la37 = note.Note('A4b')
+st.append(la37)
+la37.duration.quarterLength = 1
+
+chord11 = chord.Chord(['A3','A4'])
+st.append(chord11)
+chord11.duration.quarterLength = 1/2
+
+mi13 = note.Note('E4')
+st.append(mi13)
+mi13.duration.quarterLength = 1
+
+mi14 = note.Note('E4')
+st.append(mi14)
+mi14.duration.quarterLength = 1/2
+
+la38 = note.Note('A3')
+st.append(la38)
+la38.duration.quarterLength = 1/2
+
+la39 = note.Note('A4')
+st.append(la39)
+la39.duration.quarterLength = 1
+
+la40 = note.Note('A4b')
+st.append(la40)
+la40.duration.quarterLength = 1/2
+
+la41 = note.Note('A4b')
+st.append(la41)
+la41.duration.quarterLength = 1/2
+
+mi15 = note.Note('E3')
+st.append(mi15)
+mi15.duration.quarterLength = 1/2
+
+fa8 = note.Note('F4#')
+st.append(fa8)
+fa8.duration.quarterLength = 1 
+
+mi16 = note.Note('E3')
+st.append(mi16)
+mi16.duration.quarterLength = 1/2
+
+la42 = note.Note('A4b')
+st.append(la42)
+la42.duration.quarterLength = 1/2
+
+la43 = note.Note('A4')
+st.append(la43)
+la43.duration.quarterLength = 1/2
+
+fa9 = note.Note('F4#')
+st.append(fa9)
+fa9.duration.quarterLength = 1/2
+
+chord12 = chord.Chord(['F3#','F4#'])
+st.append(chord12)
+chord12.duration.quarterLength = 1
+
+fa10 = note.Note('F3#')
+st.append(fa10)
+fa10.duration.quarterLength = 1
+
+chord13 = chord.Chord(['D3','A4'])
+st.append(chord13)
+chord13.duration.quarterLength = 2
+
+chord14 = chord.Chord(['D3','D5b'])
+st.append(chord14)
+chord14.duration.quarterLength = 1
+
+re21 = note.Note('D5b')
+st.append(re21)
+re21.duration.quarterLength = 1
+
+chord15 = chord.Chord(['A3','D5b'])
+st.append(chord15)
+chord15.duration.quarterLength = 1/2
+
+re22 = note.Note('D5b')
+st.append(re22)
+re22.duration.quarterLength = 1
+
+la44 = note.Note('A3')
+st.append(la44)
+la44.duration.quarterLength = 1/2
+
+mi17 = note.Note('E5')
+st.append(mi17)
+mi17.duration.quarterLength = 1
+
+re23 = note.Note('D5b')
+st.append(re23)
+re23.duration.quarterLength = 1/2
+
+mi17 = note.Note('E3')
+st.append(mi17)
+mi17.duration.quarterLength = 1/2
+
+si23 = note.Note('B4')
+st.append(si23)
+si23.duration.quarterLength = 1
+
+chord16 = chord.Chord(['E3','D5'])
+st.append(chord16)
+chord16.duration.quarterLength = 1/2
+
+re24 = note.Note('D5b')
+st.append(re24)
+re24.duration.quarterLength = 1/2
+
+si24 = note.Note('B4')
+st.append(si24)
+si24.duration.quarterLength = 1/2
+
+la45 = note.Note('A4')
+st.append(la45)
+la45.duration.quarterLength = 1/2
+
+chord17 = chord.Chord(['F3#','D5b'])
+st.append(chord17)
+chord16.duration.quarterLength = 1/2
+
+re25 = note.Note('D5b')
+st.append(re25)
+re25.duration.quarterLength = 1
+
+fa11 = note.Note('F3#')
+st.append(fa11)
+fa11.duration.quarterLength = 1/2
+
+re26 = note.Note('D5b')
+st.append(re26)
+re26.duration.quarterLength = 1
+
+si25 = note.Note('B4')
+st.append(si25)
+si25.duration.quarterLength = 1/4
+
+la46 = note.Note('A4')
+st.append(la46)
+la46.duration.quarterLength = 1/4
+
+chord18 = chord.Chord(['D3','F4#'])
+st.append(chord18)
+chord18.duration.quarterLength = 2
+
+chord19 = chord.Chord(['D3','A4'])
+st.append(chord19)
+chord19.duration.quarterLength = 1/2
+
+la47 = note.Note('A4')
+st.append(la47)
+la47.duration.quarterLength = 1/2
+
+la48 = note.Note('A4')
+st.append(la48)
+la48.duration.quarterLength = 1/2
+
+chord20 = chord.Chord(['A3','A4'])
+st.append(chord20)
+chord19.duration.quarterLength = 1
+
+st.write('midi', fp = 'cancion39.mid')
