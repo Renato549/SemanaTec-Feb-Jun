@@ -3,7 +3,7 @@ from turtle import update, clear, ontimer, setup, \
     hideturtle, tracer, listen, onkey, done, goto, dot, up, \
     bgcolor, Turtle
 from freegames import floor, vector
-from tkinter import Button, Label, Tk, Frame
+from tkinter import Button, Label, Tk
 
 state = {'score': 0}
 path = Turtle(visible=False)
