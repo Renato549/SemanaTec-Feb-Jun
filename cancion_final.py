@@ -3,7 +3,8 @@ from music21 import note, chord, stream
 
 st = stream.Stream()
 
-notes = ['A3', 'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4']  # Notas con misma duración
+notes = ['A3', 'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4', 'A3', 
+         'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4']  # Notas con misma duración
 
 for n in notes:
   new_note1 = note.Note('A2')  # Nota con diferente duración
@@ -13,7 +14,8 @@ for n in notes:
   new_note.duration.quarterLength = 1/2  # Duración
   st.append(new_note)
 
-notes2 = ['A3b', 'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b']  # Notas con misma duración
+notes2 = ['A3b', 'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b', 'A3b', 
+          'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b']  # Notas con misma duración
 
 for n2 in notes2:
   new_note1 = note.Note('D3b')  # Nota con diferente duración
@@ -23,7 +25,8 @@ for n2 in notes2:
   new_note.duration.quarterLength = 1/2  # Duración
   st.append(new_note)
 
-notes3 = ['F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b']
+notes3 = ['F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b', 
+          'F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b']
 
 for n3 in notes3:
   new_note1 = note.Note('F2#')  # Nota con diferente duración
@@ -33,7 +36,8 @@ for n3 in notes3:
   new_note.duration.quarterLength = 1/2  # Duración
   st.append(new_note)
 
-notes4 = ['A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4']
+notes4 = ['A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4', 
+          'A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4']
 
 for n4 in notes4:
   new_note1 = note.Note('D3')  # Nota con diferente duración
@@ -663,4 +667,4 @@ chord20 = chord.Chord(['A3', 'A4'])
 st.append(chord20)
 chord19.duration.quarterLength = 1
 
-st.write('midi', fp = 'cancion44.mid')
+st.write('midi', fp = 'cancion45.mid')
