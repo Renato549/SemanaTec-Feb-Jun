@@ -43,4 +43,36 @@ for n4 in notes4:
   new_note.duration.quarterLength = 1/2 # Duración
   st.append(new_note)
 
-st.write('midi', fp = 'cancion31.mid')
+la1 = note.Note('A2')
+st.append(la1)
+la1.duration.quarterLength = 12
+
+mi1 = note.Note('E5')
+st.append(mi1)
+mi1.duration.quarterLength = 2
+
+re1 = note.Note('D5b')
+st.append(re1)
+re1.duration.quarterLength = 2
+
+si1 = note.Note('B4')
+st.append(si1)
+si1.duration.quarterLength = 1/2
+
+la2 = note.Note('A4')
+st.append(la2)
+la2.duration.quarterLength = 8
+
+re2 = note.Note('D3b')
+st.append(re2)
+re2.duration.quarterLength = 4
+
+mi2 = note.Note('E5')
+st.append(mi2)
+mi2.duration.quarterLength = 1/2
+
+mi3 = note.Note('E5')
+st.append(mi3)
+mi3.duration.quarterLength = 1
+
+st.write('midi', fp = 'cancion34.mid')
