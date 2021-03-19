@@ -37,7 +37,7 @@ def move():
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
-    food.move(n+1)
+    food.move(n+1)  # Hacemos que la comida se mueva
     
 
     if not inside(head) or head in snake:
@@ -49,7 +49,7 @@ def move():
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
         update()
-    
+#  Insertamos limites para la comida movible
 
     snake.append(head)
 
