@@ -65,7 +65,7 @@ la2.duration.quarterLength = 8
 
 re2 = note.Note('D3b')
 st.append(re2)
-re2.duration.quarterLength = 4
+re2.duration.quarterLength = 2
 
 mi2 = note.Note('E5')
 st.append(mi2)
@@ -75,4 +75,42 @@ mi3 = note.Note('E5')
 st.append(mi3)
 mi3.duration.quarterLength = 1
 
-st.write('midi', fp = 'cancion34.mid')
+re3 = note.Note('D5b')
+st.append(re3)
+re3.duration.quarterLength = 2
+
+rest1 = note.Rest()
+st.append(rest1)
+rest1.duration.quarterLength = 1/2
+
+si2 = note.Note('B4')
+st.append(si2)
+si2.duration.quarterLength = 1/2
+
+la3 = note.Note('A4')
+st.append(la3)
+la3.duration.quarterLength = 2
+
+fa1 = note.Note('F2#')
+st.append(fa1)
+fa1.duration.quarterLength = 2
+
+mi4 = note.Note('E5')
+st.append(mi4)
+mi4.duration.quarterLength = 1
+
+mi5 = note.Note('E5')
+st.append(mi5)
+mi5.duration.quarterLength = 1/2
+
+re4 = note.Note('D5b')
+st.append(re4)
+re4.duration.quarterLength = 2
+
+rest2 = note.Rest()
+st.append(rest2)
+rest2.duration.quarterLength = 1/2
+
+
+
+st.write('midi', fp = 'cancion35.mid')
