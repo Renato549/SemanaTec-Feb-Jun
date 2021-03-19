@@ -14,7 +14,7 @@ q = random.choice(['Green', 'Black', 'Blue', 'Brown', 'Purple'])
 d = random.choice(['Green', 'Black', 'Blue', 'Brown', 'Purple'])
 food.x = randrange(-15, 15) * 10
 food.y = randrange(-15, 15) * 10
-n = randrange(-3, 3)
+n = 0
 
 
 def change(x, y):
