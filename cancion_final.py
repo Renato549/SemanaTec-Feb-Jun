@@ -1,5 +1,5 @@
 # Ejemplo con la duración 
-from music21 import note, stream
+from music21 import note, chord, stream
 
 st = stream.Stream()
 
@@ -61,7 +61,7 @@ si1.duration.quarterLength = 1/2
 
 la2 = note.Note('A4')
 st.append(la2)
-la2.duration.quarterLength = 8
+la2.duration.quarterLength = 4
 
 re2 = note.Note('D3b')
 st.append(re2)
@@ -111,6 +111,60 @@ rest2 = note.Rest()
 st.append(rest2)
 rest2.duration.quarterLength = 1/2
 
+si3 = note.Note('B4')
+st.append(si3)
+si3.duration.quarterLength = 1/2
 
+la4 = note.Note('A4')
+st.append(la4)
+la4.duration.quarterLength = 2
 
-st.write('midi', fp = 'cancion35.mid')
+re5 = note.Note('D3')
+st.append(re5)
+re5.duration.quarterLength = 2
+
+mi6 = note.Note('E5')
+st.append(mi6)
+mi6.duration.quarterLength = 1/2
+
+mi7 = note.Note('E5')
+st.append(mi7)
+mi7.duration.quarterLength = 1
+
+re6 = note.Note('D5b')
+st.append(re6)
+re6.duration.quarterLength = 2
+
+si4 = note.Note('B4')
+st.append(si4)
+si4.duration.quarterLength = 2
+
+la5 = note.Note('A4')
+st.append(la5)
+la5.duration.quarterLength = 1/2
+
+la6 = note.Note('A2')
+st.append(la6)
+la6.duration.quarterLength = 2
+
+mi8 = note.Note('E5')
+st.append(mi8)
+mi8.duration.quarterLength = 1
+
+re7 = note.Note('D5b')
+st.append(re7)
+re7.duration.quarterLength = 1
+
+si5 = note.Note('B4')
+st.append(si5)
+si5.duration.quarterLength = 1/2
+
+la7 = note.Note('A4')
+st.append(la7)
+la7.duration.quarterLength = 2
+
+chord1 = chord.Chord(['D3b','F5#'])
+st.append(chord1)
+chord1.duration.quarterLength = 2
+
+st.write('midi', fp = 'cancion36.mid')
