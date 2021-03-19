@@ -80,7 +80,7 @@ def valid(point):
 def world():
     "Draw world using path."
     bgcolor('black')
-    path.color('blue')
+    path.color('purple')
 
     for index in range(len(tiles)):
         tile = tiles[index]
@@ -127,7 +127,7 @@ def move():
                 vector(10, 0),
                 vector(-10, 0),
                 vector(0, 10),
-                vector(0, -10),  # Hacemos a los fantasmas 
+                vector(0, -10),  # Hacemos a los fantasmas veloces
             ]
             plan = choice(options)
             course.x = plan.x
