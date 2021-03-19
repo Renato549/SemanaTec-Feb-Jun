@@ -1,46 +1,46 @@
-# Ejemplo con la duración 
+# Ejemplo con la duración
 from music21 import note, chord, stream
 
 st = stream.Stream()
 
-notes = ['A3','D4b','E4','D4','A3','D4b','E4','D4','A3','D4b','E4','D4','A3','D4b','E4','D4'] # Notas con misma duración
+notes = ['A3', 'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4', 'A3', 'D4b', 'E4', 'D4']  # Notas con misma duración
 
 for n in notes:
-  new_note1 = note.Note('A2') # Nota con diferente duración
-  new_note1.duration.quarterLength = 16 # Duración
-  new_note1.offset = 0 
-  new_note = note.Note(n) 
-  new_note.duration.quarterLength = 1/2 # Duración
+  new_note1 = note.Note('A2')  # Nota con diferente duración
+  new_note1.duration.quarterLength = 16  # Duración
+  new_note1.offset = 0
+  new_note = note.Note(n)
+  new_note.duration.quarterLength = 1/2  # Duración
   st.append(new_note)
 
-notes2 = ['A3b','D4b','E4','D4b','A3b','D4b','E4','D4b','A3b','D4b','E4','D4b','A3b','D4b','E4','D4b',] # Notas con misma duración
+notes2 = ['A3b', 'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b', 'A3b', 'D4b', 'E4', 'D4b']  # Notas con misma duración
 
 for n2 in notes2:
-  new_note1 = note.Note('D3b') # Nota con diferente duración
-  new_note1.duration.quarterLength = 16 # Duración 
+  new_note1 = note.Note('D3b')  # Nota con diferente duración
+  new_note1.duration.quarterLength = 16  # Duración
   new_note1.offset = 16
-  new_note = note.Note(n2) 
-  new_note.duration.quarterLength = 1/2 # Duración
+  new_note = note.Note(n2)
+  new_note.duration.quarterLength = 1/2  # Duración
   st.append(new_note)
 
-notes3 = ['F3#','D4b','F4#','D4b','F3#','D4b','F4#','D4b','F3#','D4b','F4#','D4b','F3#','D4b','F4#','D4b']
+notes3 = ['F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b', 'F3#', 'D4b', 'F4#', 'D4b']
 
 for n3 in notes3:
-  new_note1 = note.Note('F2#') # Nota con diferente duración
-  new_note1.duration.quarterLength = 16 # Duración 
+  new_note1 = note.Note('F2#')  # Nota con diferente duración
+  new_note1.duration.quarterLength = 16  # Duración
   new_note1.offset = 32
-  new_note = note.Note(n3) 
-  new_note.duration.quarterLength = 1/2 # Duración
+  new_note = note.Note(n3)
+  new_note.duration.quarterLength = 1/2  # Duración
   st.append(new_note)
 
-notes4 = ['A3','D4','F4#','D4','A3','D4','F4#','D4','A3','D4','F4#','D4','A3','D4','F4#','D4']
+notes4 = ['A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4', 'A3', 'D4', 'F4#', 'D4']
 
 for n4 in notes4:
-  new_note1 = note.Note('D3') # Nota con diferente duración
-  new_note1.duration.quarterLength = 16 # Duración 
+  new_note1 = note.Note('D3')  # Nota con diferente duración
+  new_note1.duration.quarterLength = 16  # Duración
   new_note1.offset = 48
-  new_note = note.Note(n4) 
-  new_note.duration.quarterLength = 1/2 # Duración
+  new_note = note.Note(n4)
+  new_note.duration.quarterLength = 1/2  # Duración
   st.append(new_note)
 
 la1 = note.Note('A2')
@@ -163,7 +163,7 @@ la7 = note.Note('A4')
 st.append(la7)
 la7.duration.quarterLength = 2
 
-chord1 = chord.Chord(['D3b','F5#'])
+chord1 = chord.Chord(['D3b', 'F5#'])
 st.append(chord1)
 chord1.duration.quarterLength = 2
 
@@ -187,7 +187,7 @@ la9 = note.Note('A4')
 st.append(la9)
 la9.duration.quarterLength = 1/2
 
-chord2 = chord.Chord(['F2#','B4'])
+chord2 = chord.Chord(['F2#', 'B4'])
 st.append(chord2)
 chord2.duration.quarterLength = 1
 
@@ -211,7 +211,7 @@ fa3 = note.Note('F4#')
 st.append(fa3)
 fa3.duration.quarterLength = 1/2
 
-chord3 = chord.Chord(['D3','B4'])
+chord3 = chord.Chord(['D3', 'B4'])
 st.append(chord3)
 chord3.duration.quarterLength = 1/2
 
@@ -235,7 +235,7 @@ mi11 = note.Note('E4')
 st.append(mi11)
 mi11.duration.quarterLength = 1/2
 
-chord3 = chord.Chord(['E3','B4'])
+chord3 = chord.Chord(['E3', 'B4'])
 st.append(chord3)
 chord3.duration.quarterLength = 1/2
 
@@ -263,7 +263,7 @@ la12 = note.Note('A4')
 st.append(la12)
 la12.duration.quarterLength = 1/2
 
-chord4 = chord.Chord(['F3#','B4'])
+chord4 = chord.Chord(['F3#', 'B4'])
 st.append(chord4)
 chord4.duration.quarterLength = 1
 
@@ -291,7 +291,7 @@ la16 = note.Note('A4')
 st.append(la16)
 la16.duration.quarterLength = 1
 
-chord5 = chord.Chord(['D3','A4'])
+chord5 = chord.Chord(['D3', 'A4'])
 st.append(chord5)
 chord5.duration.quarterLength = 1/2
 
@@ -315,7 +315,7 @@ si14 = note.Note('B4')
 st.append(si14)
 si14.duration.quarterLength = 2
 
-chord6 = chord.Chord(['D3','A4'])
+chord6 = chord.Chord(['D3', 'A4'])
 st.append(chord6)
 chord6.duration.quarterLength = 1/2
 
@@ -339,7 +339,7 @@ la21 = note.Note('A4')
 st.append(la21)
 la21.duration.quarterLength = 1
 
-chord6 = chord.Chord(['E3','B4'])
+chord6 = chord.Chord(['E3', 'B4'])
 st.append(chord6)
 chord6.duration.quarterLength = 1/2
 
@@ -363,7 +363,7 @@ si17 = note.Note('B4')
 st.append(si17)
 si17.duration.quarterLength = 1/2
 
-chord7 = chord.Chord(['F#','B4'])
+chord7 = chord.Chord(['F#', 'B4'])
 st.append(chord7)
 chord7.duration.quarterLength = 1/2
 
@@ -395,7 +395,7 @@ re18 = note.Note('D5b')
 st.append(re18)
 re18.duration.quarterLength = 1/2
 
-chord8 = chord.Chord(['D3','F4#'])
+chord8 = chord.Chord(['D3', 'F4#'])
 st.append(chord8)
 chord8.duration.quarterLength = 2
 
@@ -467,7 +467,7 @@ rest6 = note.Rest()
 st.append(rest6)
 rest6.duration.quarterLength = 1/2
 
-chord9 = chord.Chord(['E3','A4b'])
+chord9 = chord.Chord(['E3', 'A4b'])
 st.append(chord9)
 chord9.duration.quarterLength = 1/2
 
@@ -485,7 +485,7 @@ fa5.duration.quarterLength = 1/2
 
 fa6 = note.Note('F4#')
 st.append(fa6)
-fa6.duration.quarterLength = 1 
+fa6.duration.quarterLength = 1
 
 fa7 = note.Note('F3#')
 st.append(fa7)
@@ -495,7 +495,7 @@ re20 = note.Note('D3')
 st.append(re20)
 re20.duration.quarterLength = 1
 
-chord10 = chord.Chord(['D3','F4#'])
+chord10 = chord.Chord(['D3', 'F4#'])
 st.append(chord10)
 chord10.duration.quarterLength = 1
 
@@ -503,7 +503,7 @@ la37 = note.Note('A4b')
 st.append(la37)
 la37.duration.quarterLength = 1
 
-chord11 = chord.Chord(['A3','A4'])
+chord11 = chord.Chord(['A3', 'A4'])
 st.append(chord11)
 chord11.duration.quarterLength = 1/2
 
@@ -537,7 +537,7 @@ mi15.duration.quarterLength = 1/2
 
 fa8 = note.Note('F4#')
 st.append(fa8)
-fa8.duration.quarterLength = 1 
+fa8.duration.quarterLength = 1
 
 mi16 = note.Note('E3')
 st.append(mi16)
@@ -555,7 +555,7 @@ fa9 = note.Note('F4#')
 st.append(fa9)
 fa9.duration.quarterLength = 1/2
 
-chord12 = chord.Chord(['F3#','F4#'])
+chord12 = chord.Chord(['F3#', 'F4#'])
 st.append(chord12)
 chord12.duration.quarterLength = 1
 
@@ -563,11 +563,11 @@ fa10 = note.Note('F3#')
 st.append(fa10)
 fa10.duration.quarterLength = 1
 
-chord13 = chord.Chord(['D3','A4'])
+chord13 = chord.Chord(['D3', 'A4'])
 st.append(chord13)
 chord13.duration.quarterLength = 2
 
-chord14 = chord.Chord(['D3','D5b'])
+chord14 = chord.Chord(['D3', 'D5b'])
 st.append(chord14)
 chord14.duration.quarterLength = 1
 
@@ -575,7 +575,7 @@ re21 = note.Note('D5b')
 st.append(re21)
 re21.duration.quarterLength = 1
 
-chord15 = chord.Chord(['A3','D5b'])
+chord15 = chord.Chord(['A3', 'D5b'])
 st.append(chord15)
 chord15.duration.quarterLength = 1/2
 
@@ -603,7 +603,7 @@ si23 = note.Note('B4')
 st.append(si23)
 si23.duration.quarterLength = 1
 
-chord16 = chord.Chord(['E3','D5'])
+chord16 = chord.Chord(['E3', 'D5'])
 st.append(chord16)
 chord16.duration.quarterLength = 1/2
 
@@ -619,7 +619,7 @@ la45 = note.Note('A4')
 st.append(la45)
 la45.duration.quarterLength = 1/2
 
-chord17 = chord.Chord(['F3#','D5b'])
+chord17 = chord.Chord(['F3#', 'D5b'])
 st.append(chord17)
 chord16.duration.quarterLength = 1/2
 
@@ -643,11 +643,11 @@ la46 = note.Note('A4')
 st.append(la46)
 la46.duration.quarterLength = 1/4
 
-chord18 = chord.Chord(['D3','F4#'])
+chord18 = chord.Chord(['D3', 'F4#'])
 st.append(chord18)
 chord18.duration.quarterLength = 2
 
-chord19 = chord.Chord(['D3','A4'])
+chord19 = chord.Chord(['D3', 'A4'])
 st.append(chord19)
 chord19.duration.quarterLength = 1/2
 
@@ -659,8 +659,8 @@ la48 = note.Note('A4')
 st.append(la48)
 la48.duration.quarterLength = 1/2
 
-chord20 = chord.Chord(['A3','A4'])
+chord20 = chord.Chord(['A3', 'A4'])
 st.append(chord20)
 chord19.duration.quarterLength = 1
 
-st.write('midi', fp = 'cancion39.mid')
+st.write('midi', fp = 'cancion44.mid')
