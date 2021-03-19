@@ -37,7 +37,7 @@ def move():
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
-    food.move(n + randrange(-10, 10))  # Hacemos que la comida se mueva
+    food.move(n + randrange(-5, 5))  # Hacemos que la comida se mueva
     
 
     if not inside(head) or head in snake:
@@ -96,9 +96,9 @@ def Menu():  # Declaramos una funcion para un menu de inicio
     root.geometry("450x100+200+50")
     root.configure(bg = 'green')
     mi_Frame = Frame().pack()
-    labe1 = Label(mi_Frame, text='''|||||Bienvenido|||||
+    Label(mi_Frame, text='''|||||Bienvenido|||||
 Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="Brown").pack()
-    boton = Button(mi_Frame, text='Ingresar', command = S).pack()
+    Button(mi_Frame, text='Ingresar', command = S).pack()
     root.mainloop()
 
     '''Declaramos un boton ligado a la funcion

@@ -83,9 +83,9 @@ def Menu():  # Declaramos una funcion para un menu de inicio
     root = Tk()
     root.geometry("450x100+200+50")
     root.configure(bg='Brown')
-    labe1 = Label(root, text='''|||||Bienvenido|||||
+    Label(root, text='''|||||Bienvenido|||||
 Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="blue4").pack()
-    boton = Button(root, text='Ingresar', command = T).pack()
+    Button(root, text='Ingresar', command = T).pack()
     root.mainloop()
 
     '''Declaramos un boton ligado a la funcion
