@@ -6,7 +6,7 @@ from random import randrange
 from freegames import square, vector
 from tkinter import Button, Label, Tk, Frame
 
->>>>>>> VideoJuego
+
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
@@ -18,7 +18,7 @@ food.x = randrange(-15, 15) * 10
 food.y = randrange(-15, 15) * 10
 n = 0
 
->>>>>>> VideoJuego
+
 
 def change(x, y):
     "Change snake direction."
@@ -66,14 +66,14 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, d)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, z)
     update()
     ontimer(move, 100)
 
 def S():
->>>>>>> VideoJuego
+
     setup(420, 420, 370, 0)
     hideturtle()
     tracer(False)
