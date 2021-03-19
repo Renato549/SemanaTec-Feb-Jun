@@ -173,8 +173,9 @@ def P():  # Declaramos nuestro juego como una funcion
 def Menu():  # Declaramos una funcion para un menu de inicio
     root = Tk()
     root.geometry("450x100+200+50")
+    root.configure(bg='Blue')
     labe1 = Label(root, text='''|||||Bienvenido|||||
-Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="blue4").pack()
+Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="red").pack()
     boton = Button(root, text='Ingresar', command = P).pack()
     root.mainloop()
 
