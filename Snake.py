@@ -12,6 +12,9 @@ aim = vector(0, -10)
 # Declaramos variables que escojan de forma aleatoria un color
 q = random.choice(['Green', 'Black', 'Blue', 'Brown', 'Purple'])
 d = random.choice(['Green', 'Black', 'Blue', 'Brown', 'Purple'])
+food.x = randrange(-15, 15) * 10
+food.y = randrange(-15, 15) * 10
+n = 0
 
 
 def change(x, y):
@@ -28,12 +31,13 @@ def inside(head):
 def inside(food):
     "Return True if food inside boundaries."
     return -200 < food.x < 190 and -200 < food.y < 190
-
+    
 
 def move():
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
+    food.move(n+1)
     
 
     if not inside(head) or head in snake:
@@ -41,12 +45,19 @@ def move():
         update()
         return
 
+    if not inside(food):
+        food.x = randrange(-15, 15) * 10
+        food.y = randrange(-15, 15) * 10
+        update()
+    
+
     snake.append(head)
 
     if head == food:
         print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
+        
     else:
         snake.pop(0)
 
