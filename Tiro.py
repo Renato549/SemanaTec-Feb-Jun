@@ -2,6 +2,7 @@ from random import randrange
 from turtle import setup, ontimer, hideturtle, up, \
     tracer, onscreenclick, done, update, clear, goto, dot
 from freegames import vector
+from tkinter import Button, Label, Tk, Frame
 
 ball = vector(-200, -200)
 speed = vector(0, 0)
@@ -68,10 +69,26 @@ def move():
     ontimer(move, 50)
 
 
-setup(420, 420, 370, 0)
-hideturtle()
-up()
-tracer(False)
-onscreenclick(tap)
-move()
-done()
+def T():  # Declaramos nuestro juego como una funcion
+    setup(420, 420, 370, 0)
+    hideturtle()
+    up()
+    tracer(False)
+    onscreenclick(tap)
+    move()
+    done()
+
+
+def Menu():  # Declaramos una funcion para un menu de inicio
+    root = Tk()
+    root.geometry("450x100+200+50")
+    labe1 = Label(root, text='''|||||Bienvenido|||||
+Le gustaria Jugar? \nPresione Para jugar\n  ''', fg="blue4").pack()
+    boton = Button(root, text='Ingresar', command = T).pack()
+    root.mainloop()
+
+    '''Declaramos un boton ligado a la funcion
+    de arriba para activar el juego'''
+
+
+Menu()
